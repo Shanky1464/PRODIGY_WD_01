@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    width: 99%; /* Ensure it spans the full width */
+    z-index: 999; /* Ensure it stays above other elements */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+    background-color: #333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between the links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgb(232, 232, 230);
+    color: black;
+    font-size: larger;
+
+}
+
+.logo:hover{
+    transform: rotateZ(720deg);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.sidebar{
+    background-color: #232323;
+    left:-250px;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    transition: left 2s ease;
+    z-index: 998;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar ul li{
+    padding: 1rem;
+    color: aliceblue;
+}
+
+p{
+    font-size: larger;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    font-size: larger;
+    background-color: antiquewhite;
+    color: black;
+}
